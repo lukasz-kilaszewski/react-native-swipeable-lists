@@ -107,6 +107,10 @@ class SwipeableRow extends React.Component<Props, State> {
     event: PressEvent,
     gestureState: GestureState,
   ): void => {
+    const horizontalDistance = IS_RTL ? -gestureState.dx : gestureState.dx;
+    if (horizontalDistance < -150) {
+      return false;
+    }
     if (this._isSwipingExcessivelyRightFromClosedPosition(gestureState)) {
       return;
     }
