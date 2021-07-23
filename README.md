@@ -17,12 +17,12 @@ Swipeable lists for React Native. Supports Android and iOS.
 ### Installation
 
    ```bash
-   yarn add react-native-swipeable-lists
+   yarn add react-native-swipeable-lists-gd
    ```
 or
 
    ```bash
-   npm install react-native-swipeable-lists
+   npm install react-native-swipeable-lists-gd
    ```
 
 ### Opening issues
