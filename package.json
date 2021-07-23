@@ -1,19 +1,19 @@
 {
-  "name": "react-native-swipeable-lists",
+  "name": "react-native-swipeable-lists-gd",
   "version": "0.0.1",
-  "description": "Swipeable lists for React Native ⬅️➡️",
+  "description": "Swipeable lists for React Native (fork for GD)️",
   "license": "MIT",
-  "author": "Nicolas Castellanos",
+  "author": "Lukasz Kilaszewski",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "react-native": "src/index.js",
   "bugs": {
-    "url": "https://github.com/nicastelo/react-native-swipeable-lists/issues"
+    "url": "https://github.com/lukasz-kilaszewski/react-native-swipeable-lists"
   },
-  "homepage": "https://github.com/nicastelo/react-native-swipeable-lists#readme",
+  "homepage": "https://github.com/lukasz-kilaszewski/react-native-swipeable-lists",
   "repository": {
     "type": "git",
-    "url": "git@github.com:nicastelo/react-native-swipeable-lists.git"
+    "url": "git@github.com:lukasz-kilaszewski/react-native-swipeable-lists.git"
   },
   "keywords": [
     "react-native",

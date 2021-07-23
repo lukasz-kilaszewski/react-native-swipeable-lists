@@ -3,6 +3,8 @@
 [![Version](https://img.shields.io/npm/v/react-native-swipeable-lists.svg)](https://www.npmjs.com/package/react-native-swipeable-lists)
 [![NPM](https://img.shields.io/npm/dm/react-native-swipeable-lists.svg)](https://www.npmjs.com/package/react-native-swipeable-lists)
 
+This is just a fork from https://www.npmjs.com/package/react-native-swipeable-lists
+With some changes for project requirement
 Swipeable lists for React Native. Supports Android and iOS.
 
 - [Installation](#installation)
