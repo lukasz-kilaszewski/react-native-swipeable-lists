@@ -109,6 +109,11 @@ class SwipeableRow extends React.Component<Props, State> {
   ): void => {
     const horizontalDistance = IS_RTL ? -gestureState.dx : gestureState.dx;
     const maxSwipeDistance = this.props.maxSwipeDistance ?? 0;
+    const rowIsOpen = this.state.rowIsOpen ?? 0;
+
+    if(rowIsOpen && (horizontalDistance < 0)) {
+      return;
+    }
     if (horizontalDistance < -maxSwipeDistance || horizontalDistance > maxSwipeDistance ) {
       return;
     }
@@ -144,10 +149,12 @@ class SwipeableRow extends React.Component<Props, State> {
       if (horizontalDistance < 0) {
         // Swiped left
         this.props.onOpen && this.props.onOpen();
+        this.setState( {...this.state, rowIsOpen: true })
         this._animateToOpenPositionWith(gestureState.vx, horizontalDistance);
       } else {
         // Swiped right
         this.props.onClose && this.props.onClose();
+        this.setState( {...this.state, rowIsOpen: false })
         this._animateToClosedPosition();
       }
     } else {
@@ -185,6 +192,7 @@ class SwipeableRow extends React.Component<Props, State> {
      */
     isSwipeableViewRendered: false,
     rowHeight: null,
+    rowIsOpen: false,
   };
 
   componentDidMount(): void {
